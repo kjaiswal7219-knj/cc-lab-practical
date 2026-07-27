@@ -1,43 +1,236 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Bikes!</title>
-        <link rel="stylesheet" href="index2.css">
-    </head>
-    <body>
-        
-        <div id="wrapper">
-            
-            <nav id="main-navigation">
-                <ul>
-                    <li><a href="#" class="current">Bikes</a></li>
-                    <li><a href="#">Best Buy</a></li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>    
-            </nav>
-            
-            <div id="lead-banner">
-                <img src="images/lead-banner.jpg" alt="Bikes!">
-            </div>
-            
-            <section id="shop">
-                <img class="product-image" src="images/bike.jpg" alt="RetroSyperb image">
-                <h2 class="product-name">Bicycle RetroSyperb Vii #1</h2>
-                <span class="price">299.99$</span>
-                <a class="add-to-bag" href="#">Add to shopping basket</a>
-                <img class="rating" src="images/stars.png" alt="star-rating">
-            </section>
-            
-            <div id="footer-banner">
-                <img src="images/footer.jpg" alt="pic of bike">
-            </div>
-            
-        </div>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazt Web | Mobile Web Design</title>
+
+    <!-- BX Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="banner-wrapper">
+
+<header>
+
+<div id="header-inner">
+
+<a href="#" id="logo">
+<img src="img/pics/fazt_logo.png" alt="Logo">
+</a>
+
+<nav>
+
+<a href="#" id="menu-icon">
+<i class="fa fa-bars"></i>
+</a>
+
+<ul>
+
+<li><a href="index.html" class="current">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<div id="slide-wrap">
+
+<section class="slider">
+
+<ul class="slider1">
+
+<li><img src="img/slider/slider1.jpg" alt=""></li>
+<li><img src="img/slider/slider2.jpg" alt=""></li>
+<li><img src="img/slider/slider3.jpg" alt=""></li>
+
+</ul>
+
+</section>
+
+</div>
+
+</div>
+
+<!-- Services -->
+
+<section class="one-third" id="skills">
+
+<div class="icon-wrap">
+<i class="fa fa-desktop"></i>
+</div>
+
+<h3>Web Design</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium voluptas hic quia veritatis eaque ipsam.
+</p>
+
+</section>
+
+<section class="one-third">
+
+<div class="icon-wrap">
+<i class="fa fa-pencil-square-o"></i>
+</div>
+
+<h3>Graphic Design</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium voluptas hic quia veritatis eaque ipsam.
+</p>
+
+</section>
+
+<section class="one-third">
+
+<div class="icon-wrap">
+<i class="fa fa-file-code-o"></i>
+</div>
+
+<h3>Development</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium voluptas hic quia veritatis eaque ipsam.
+</p>
+
+</section>
+
+<div class="clearfix-padding"></div>
+
+<section class="left-col" id="portfolio">
+
+<h3>Portfolio</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+</section>
+
+<section class="sidebar">
+
+<img src="img/pics/fazt_logo.png" alt="Logo">
+
+</section>
+
+<div class="clearfix-padding"></div>
+
+<div class="one-third-padding" id="services">
+
+<h3>Our Skills One</h3>
+
+<img src="img/pics/image1.png" alt="">
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>
+
+</div>
+
+<div class="one-third-padding">
+
+<h3>Our Skills Two</h3>
+
+<img src="img/pics/image2.png" alt="">
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>
+
+</div>
+
+<div class="one-third-padding">
+
+<h3>Our Skills Three</h3>
+
+<img src="img/pics/image3.png" alt="">
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>
+
+</div>
+
+</div>
+
+<div class="clearfix-padding"></div>
+
+<footer>
+
+<div id="banner-wrapper">
+
+<div class="icon-text">
+
+<div class="icon-text-icon">
+
+<ul class="footer-nav">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="icon-text-text">
+
+<ul class="social">
+
+<li>
+<a href="#"><i class="fa fa-envelope-o"></i></a>
+</li>
+
+<li>
+<a href="#"><i class="fa fa-facebook"></i></a>
+</li>
+
+<li>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</li>
+
+<li>
+<a href="#"><i class="fa fa-youtube"></i></a>
+</li>
+
+<li>
+<a href="#"><i class="fa fa-instagram"></i></a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<footer class="second">
+
+<p>
+&copy; 2026 Fazt Web | All Rights Reserved
+</p>
+</body>
 </html>
