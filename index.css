@@ -1,99 +1,267 @@
-/*//////////////////////////
-// BIKES WEBSITE CSS
-// THE NET NINJA
-//////////////////////////*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
-    margin: 0;
-    font-family: arial;
-    background: #eee;
+    background:#ecf0f1;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 #wrapper{
-    width: 980px;
-    margin: 0 auto;
-    background: #fff;
+    max-width:1200px;
+    margin:auto;
 }
 
-#main-navigation{
-    background: #181818;
-    padding: 10px;
+#banner-wrapper{
+    max-width:1200px;
+    margin:auto;
 }
 
-#main-navigation ul{
-    text-align: right;
-    list-style-type: none;
-    margin-right: 10px;
+header{
+    width:100%;
+    height:100px;
 }
 
-#main-navigation li{
-    display: inline-block;
-    margin-left: 20px;
+#header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
 }
 
-#main-navigation a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 6px;
+#logo img{
+    width:60px;
 }
 
-#main-navigation a.current{
-    background: #8f746c;
-    border-radius: 4px;
+nav ul{
+    list-style:none;
+    display:flex;
 }
 
-#lead-banner img{
-    width: 100%;
+nav ul li{
+    margin-left:20px;
 }
 
-#shop{
-    margin: 30px 0;
-    text-align: center;
+nav ul li a{
+    text-decoration:none;
+    color:#6991ac;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-#shop h2.product-name{
-    font-size: 16px;
-    margin-bottom: 0;
+nav ul li a:hover,
+.current{
+    color:#3f5767;
 }
 
-#shop span.price{
-    font-size: 58px;
-    display: block;
+#menu-icon{
+    display:none;
+    font-size:32px;
 }
 
-#shop a.add-to-bag{
-    display: block;
-    color: #8f746c;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 10px 0px;
-    border: 2px solid #8f746c;
-    width: 210px;
-    margin: 20px auto;
+/* Slider */
+
+.slider img{
+    width:100%;
+    height:auto;
 }
 
-#shop a.add-to-bag:hover{
-    background: #8f746c;
-    color: #fff;
+/* Three Columns */
+
+.one-third{
+    width:33.33%;
+    float:left;
+    padding:20px;
+    text-align:center;
 }
 
-#footer-banner img{
-    width: 100%;
+.icon-wrap{
+    width:120px;
+    height:120px;
+    background:#6991ac;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
+.icon-wrap i{
+    color:#fff;
+    font-size:55px;
+}
 
+.one-third h3{
+    margin:20px 0;
+    color:#444;
+}
 
+.one-third p{
+    color:#555;
+    line-height:1.7;
+}
 
+/* Portfolio */
 
+.left-col{
+    width:60%;
+    float:left;
+    padding:20px;
+}
 
+.sidebar{
+    width:40%;
+    float:left;
+    padding:20px;
+}
 
+.sidebar img{
+    width:100%;
+}
 
+/* Skills */
 
+.one-third-padding{
+    width:33.33%;
+    float:left;
+    padding:20px;
+    text-align:center;
+}
 
+.one-third-padding img{
+    width:100%;
+}
 
+.one-third-padding h3{
+    margin:15px 0;
+}
 
+.one-third-padding p{
+    line-height:1.6;
+}
 
+/* Clear */
 
+.clearfix-padding{
+    clear:both;
+}
+
+/* Footer */
+
+footer{
+    width:100%;
+    background:#2c3e50;
+    color:#fff;
+    overflow:hidden;
+    margin-top:30px;
+}
+
+.icon-text{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.icon-text-icon{
+    width:40%;
+}
+
+.icon-text-text{
+    width:60%;
+    text-align:center;
+    font-size:16px;
+}
+
+.footer-nav{
+    list-style:none;
+}
+
+.footer-nav li{
+    margin-bottom:10px;
+}
+
+.footer-nav a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.footer-nav a:hover{
+    color:#aadcd2;
+}
+
+.social{
+    list-style:none;
+}
+
+.social li{
+    display:inline-block;
+    margin:10px;
+}
+
+.social i{
+    font-size:35px;
+    color:#fff;
+    transition:.3s;
+}
+
+.social i:hover{
+    color:#aadcd2;
+}
+
+/* Bottom Footer */
+
+footer.second{
+    background:#1f2c39;
+    text-align:center;
+    padding:15px;
+}
+
+footer.second p{
+    color:#fff;
+    font-size:18px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+#header-inner{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.one-third,
+.left-col,
+.sidebar,
+.one-third-padding,
+.icon-text-icon,
+.icon-text-text{
+    width:100%;
+}
+
+.icon-wrap{
+    width:90px;
+    height:90px;
+}
+
+.icon-wrap i{
+    font-size:40px;
+}
+
+footer.second p{
+    font-size:15px;
+}
+
+}
